@@ -86,5 +86,14 @@ class MacBrowserRefresh:
 
         self._call_applescript(command)
 
+    def pinegrow(self):
+        command = """
+            tell application "Pinegrow Web Designer"
+                activate
+            end tell
+            """
+
+        self._call_applescript(command)
+
     def _call_applescript(self, command):
         call(['osascript', '-e', command])

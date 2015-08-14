@@ -68,6 +68,9 @@ class BrowserRefreshCommand(sublime_plugin.TextCommand):
         if 'firefoxdev' in browsers and _os == 'Darwin':
             refresher.firefox_dev()
 
+        if 'pinegrow' in browsers and _os == 'Darwin':
+            refresher.pinegrow()
+
         if 'opera' in browsers:
             refresher.opera()
 
